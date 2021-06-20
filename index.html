@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>mikol (the developer)</title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away-extreme.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <main>
+            <h1 class="headline">I'm <span class="interactive" id="name">Mikol Aspinwall</span>, and I work at Everence.</span>
+        </main>
+        
+        <div id="profileCardTemplate" style="display: none;">
+            <div class="profile">
+                <h2 class="profile__header">I'm a full-stack <span class="interactive" id="developer">developer</span>.</h2>
+                <h3 class="profile__sub">Here are my socials.</h3>
+                <div class="profile__body">
+                    <img class="profile__body__headshot switch" data-srcstr="mikol" src="assets/img/mikol.png" />
+                    <div class="profile__body__icons">
+                        <a href="https://github.com/mi-kol">
+                            <img class="switch" data-srcstr="github" src="assets/img/github.png" />
+                        </a>
+                        <a href="https://open.spotify.com/user/trs_lombardi">
+                            <img class="switch" data-srcstr="spotify" src="assets/img/spotify.png" />
+                        </a>
+                        <a href="https://linkedin.com/in/mikol">
+                            <img class="switch" data-srcstr="linkedin" src="assets/img/linkedin.png" />
+                        </a>
+                        <a href="https://twitter.com/mikolwaves">
+                            <img class="switch" data-srcstr="twitter" src="assets/img/twitter.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="developerTemplate" style="display: none;">
+            <div class="dev-profile">
+                <!-- <h2 class="dev-profile__header">I know my way around</h2> -->
+                <div class="dev-profile__body">
+                    <img data-topic="js" src="assets/img/js.png" />
+                    <img data-topic="swift" src="assets/img/swiftui.png" />
+                    <img data-topic="python" src="assets/img/python.png" />
+                    <img data-topic="sql" src="assets/img/sql.png" />
+                    <img data-topic="node" src="assets/img/nodejs.png" />
+                    <img data-topic="react" src="assets/img/react.png" />
+                    <img data-topic="csharp" src="assets/img/csharp.png" />
+                    <img data-topic="selenium" src="assets/img/selenium.png" />
+                    <img data-topic="flask" src="assets/img/flask.png" />
+                    <img data-topic="docker" src="assets/img/docker.png" />
+                    <img data-topic="aws" src="assets/img/aws.png" />
+                    <img data-topic="figma" src="assets/img/figma.png" />
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/tippymanager.js"></script>
+    </body>
+</html>

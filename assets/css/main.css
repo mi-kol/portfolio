@@ -1,0 +1,164 @@
+:root {
+    --main-bg-color: #264653;
+    --main-text-color: white;
+    --main-link-color: #3cafa0;
+    --accent-bg-color: #E76F51
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'FuturaNowHeadline';
+    src: url("../fonts/FuturaNowHeadline-Bd.otf") format("opentype");
+}
+
+html {
+    background-color: white;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+
+    font-family: 'Cabin', sans-serif;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.interactive {
+    color: var(--main-link-color);
+}
+
+main h1 {
+    font-family: 'FuturaNowHeadline';
+}
+
+.subtitle {
+    /* position: relative; */
+    top: 8rem;
+}
+
+div.dev-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+div.dev-profile__body {
+    /* background-color: white; */
+
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    width: max-content;
+
+    /* border-radius: 5%; */
+
+}
+
+div.profile {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+div.profile__body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    height: max-content;
+    background-color: white;
+    border-radius: 20%;
+
+    margin-top: 1.5rem;
+}
+
+img.profile__body__headshot {
+    width: 112px;
+    height: auto;
+    /* margin-right: 0.5rem; */
+
+    border-radius: 20% 20% 0 20%;
+}
+
+img.profile__body__headshot:hover {
+    cursor: pointer;
+}
+
+/* img.profile__body__headshot:hover {
+    content:url("../img/drawn_mikol.png");
+} */
+
+.profile__body__icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 112px;
+    width: 112px;
+    background-color: white;
+    border-radius: 0 20% 20% 0;
+    /* justify-content: space-around; */
+}
+
+.profile__body__icons img {
+    height: 48px;
+    width: auto;
+    margin: 0.25rem;
+    transform: scale(0.9, 0.9);
+}
+
+.dev-profile__body img {
+    height: 48px;
+    width: auto;
+    margin: 0.25rem;
+    transform: scale(0.9, 0.9);
+}
+
+@keyframes dance {
+    0%, 100% {
+        transform:rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+}
+
+.profile__body__icons img.drawn:hover {
+    animation: dance 0.8s steps(1) infinite;
+    transform: scale(1, 1);
+}
+
+.tippy-box {
+    border-radius: 5%;
+    background-color: var(--main-bg-color);
+}
+
+
