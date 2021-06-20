@@ -8,7 +8,8 @@ tippy('.profile', {
     arrow: false,
     triggerTarget: document.querySelector('#developer'),
     placement: 'top',
-    maxWidth: 'none'
+    maxWidth: '550',
+    interactiveBorder: 40
 });
 
 tippy('#name', {
@@ -16,5 +17,6 @@ tippy('#name', {
     interactive: true,
     content: profileCard,
     arrow: false,
-    animation: 'shift-away-extreme'
+    animation: 'shift-away-extreme',
+    interactiveBorder: 40
 });
