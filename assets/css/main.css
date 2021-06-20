@@ -49,6 +49,11 @@ main {
 
 .interactive {
     color: var(--main-link-color);
+    transition: font-size 0.5s;
+}
+
+.interactive:hover {
+    font-size: 1.15em;
 }
 
 main h1 {
@@ -140,6 +145,10 @@ img.profile__body__headshot:hover {
     width: auto;
     margin: 0.25rem;
     transform: scale(0.9, 0.9);
+}
+
+.dev-profile__body img:hover {
+    transform: scale(1.0, 1.0);
 }
 
 @keyframes dance {
