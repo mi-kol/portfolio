@@ -52,7 +52,7 @@ main {
     transition: font-size 0.5s;
 }
 
-.interactive:hover {
+.interactive:hover, .interactive.selected {
     font-size: 1.15em;
 }
 
@@ -165,9 +165,17 @@ img.profile__body__headshot:hover {
     transform: scale(1, 1);
 }
 
+.profile__body__icons img:hover {
+    transform: scale(1, 1);
+}
+
 .tippy-box {
     border-radius: 5%;
     background-color: var(--main-bg-color);
+}
+
+a[href^="mailto"] {
+    color: var(--main-link-color);
 }
 
 
